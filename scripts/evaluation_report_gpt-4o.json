@@ -1,0 +1,141 @@
+{
+    "report": [
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "You have a call from contact name 'John Doe'."
+                },
+                {
+                    "role": "user",
+                    "content": "I'm driving I cannot talk right now reject it. Send him a message saying I'll call him back later."
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "CallInteraction",
+                    "parameters": {
+                        "interaction_type": "REJECT"
+                    }
+                },
+                {
+                    "name": "SendMessage",
+                    "parameters": {
+                        "app_name": "Phone",
+                        "meta": {
+                            "is_number": false,
+                            "number": null,
+                            "contact_name": "John Doe"
+                        },
+                        "message_text": "I'll call you back later."
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The system's response is excellent and precisely matches the user's request. It includes actions to reject the call via a 'REJECT' interaction type and send a message stating the user will call back later. This addresses all aspects of the user's requirements efficiently."
+            },
+            "token_usage": {
+                "completion_tokens": 88,
+                "prompt_tokens": 1964,
+                "total_tokens": 2052
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "Where would you like to go today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need go to Lilavati Hospital."
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "MapInteraction",
+                    "parameters": {
+                        "action": "Start",
+                        "is_update": false,
+                        "stop": null
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 2,
+                "evaluation": "The response partially addresses the user's request by initiating a map interaction. However, it misses important aspects such as specifying the destination 'Lilavati Hospital', which is crucial for fulfilling the user's needs accurately."
+            },
+            "token_usage": {
+                "completion_tokens": 48,
+                "prompt_tokens": 1916,
+                "total_tokens": 1964
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "Your Spotify playlist is ready. What would you like to do?"
+                },
+                {
+                    "role": "user",
+                    "content": "Play 'Blinding Lights'"
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "AudioInteraction",
+                    "parameters": {
+                        "action": "Select",
+                        "is_select": true,
+                        "song_name": "Blinding Lights"
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The system's response of selecting and playing 'Blinding Lights' via an 'AudioInteraction' function precisely matches the user's request to play the song, addressing the need fully with appropriate parameters."
+            },
+            "token_usage": {
+                "completion_tokens": 43,
+                "prompt_tokens": 1925,
+                "total_tokens": 1968
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "You are receiving a call from your office."
+                },
+                {
+                    "role": "user",
+                    "content": "Accept it"
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "CallInteraction",
+                    "parameters": {
+                        "interaction_type": "ACCEPT"
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The response is excellent as it directly fulfills the user's request to accept the incoming phone call from the office. The \u2018CallInteraction\u2019 function with a parameter set to 'ACCEPT' is the precise and correct response to handle the user\u2019s instruction."
+            },
+            "token_usage": {
+                "completion_tokens": 29,
+                "prompt_tokens": 1901,
+                "total_tokens": 1930
+            }
+        }
+    ],
+    "average_rating": 3.5,
+    "total_time_for_generating_system_responses": 15.735699999999998,
+    "average_time_for_generating_system_responses": 3.9339249999999995,
+    "total_time_for_evaluating": 19.5805,
+    "average_rating_time": 4.895125
+}

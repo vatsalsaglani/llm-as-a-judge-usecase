@@ -1,0 +1,240 @@
+[
+  [
+    {
+      "rating": 4,
+      "evaluation": "The system's response is excellent as it perfectly matches the user's request. The system rejected the call as requested while the user is driving and appropriately followed up by sending a message to inform John Doe that the user will call back later. The action types and parameters chosen are exactly what the user asked for."
+    },
+    {
+      "rating": 2,
+      "evaluation": "The response is partially appropriate. It correctly initiates a mapping interaction which is relevant to the user\u2019s need to travel. However, it lacks specific details about the destination ('Lilavati Hospital'), which is crucial for effectively assisting the user in navigating to the correct location."
+    },
+    {
+      "rating": 4,
+      "evaluation": "The response is excellent as it perfectly matches the user's request. The user asked to play 'Blinding Lights' and the system responded with an 'AudioInteraction' function to select and play the song 'Blinding Lights'. This action is exactly what is needed to fulfill the user's intention."
+    },
+    {
+      "rating": 4,
+      "evaluation": "The system generated response perfectly matches the user's request to accept the incoming call from the office. The function 'CallInteraction' with the parameter set to {'interaction_type': 'ACCEPT'} is aligned exactly with the user's intent."
+    },
+    {
+      "rating": 2,
+      "evaluation": "The response partially addresses the user request. It correctly identifies the need to reject the call, send a message to Jane stating they're on their way, and start the navigation. However, it lacks the specific destination for navigation ('Home, HSR Layout'), which is crucial for fulfilling the user's navigation request effectively."
+    },
+    {
+      "rating": 4,
+      "evaluation": "The system provided a clear and correct response to the user's question about who won the match between SRH and GT. The response accurately reflects the information that the match was abandoned due to rain, aligning perfectly with the details mentioned in the search results provided."
+    },
+    {
+      "rating": 3,
+      "evaluation": "The response is mostly appropriate as it provides a list of the best lunch places based on the search result from Yelp for Detroit, MI. Though it accurately addresses the request for lunch places, it could be more precise if it included more details about the user's exact location to ensure the recommendations are indeed nearest to them, or if it included additional actions to enhance user experience, such as providing directions or user reviews."
+    },
+    {
+      "rating": 4,
+      "evaluation": "The response directly and accurately provides the requested information, identifying Narendra Modi as the Prime Minister of India, which is absolutely correct and fulfills the user's question."
+    },
+    {
+      "rating": 4,
+      "evaluation": "The system's response perfectly addresses the user's query by directly providing the name of the current President of India, Droupadi Murmu, which matches the information found in the user's presented search results. The response effectively fulfills the user's request without unnecessary details, making it both accurate and complete."
+    },
+    {
+      "rating": 4,
+      "evaluation": "The response is excellent as it directly provides the location of the Great Wall of China, fully answering the user's inquiry with specific geographical details."
+    },
+    {
+      "rating": 4,
+      "evaluation": "The response perfectly addresses the user's request to reroute to a different hospital, explicitly handling the change from Lilavati Hospital to Kokilaben Hospital with correct parameters for updating the navigation appropriately."
+    },
+    {
+      "rating": 3,
+      "evaluation": "The response is mostly appropriate as it addresses the user's request to send a message through WhatsApp to Sharmaji, specifying the late arrival by 10 minutes. However, the response lacks clarity on how the system will identify Sharmaji, assuming the contact's name without confirming if the name directly corresponds to a contact entry or requires further clarification. Adding a verification or search step could enhance the response accuracy."
+    },
+    {
+      "rating": 2,
+      "evaluation": "The function call attempts to switch to the 'Workout Hits' playlist, which partially addresses the user's request. However, it does not address the user's request to increase the volume, therefore it misses an important aspect of the request."
+    },
+    {
+      "rating": 4,
+      "evaluation": "The function call precisely matches the user's request to send a message to 'Mummy' indicating they will call back in an hour. The parameters specify the app to use ('Phone') and the content of the message, making the response entirely appropriate and well-targeted."
+    }
+  ],
+  [
+    { "completion_tokens": 97, "prompt_tokens": 1934, "total_tokens": 2031 },
+    { "completion_tokens": 49, "prompt_tokens": 1886, "total_tokens": 1935 },
+    { "completion_tokens": 43, "prompt_tokens": 1895, "total_tokens": 1938 },
+    { "completion_tokens": 37, "prompt_tokens": 1871, "total_tokens": 1908 },
+    { "completion_tokens": 132, "prompt_tokens": 1931, "total_tokens": 2063 },
+    { "completion_tokens": 33, "prompt_tokens": 1109, "total_tokens": 1142 },
+    { "completion_tokens": 81, "prompt_tokens": 1017, "total_tokens": 1098 },
+    { "completion_tokens": 36, "prompt_tokens": 469, "total_tokens": 505 },
+    { "completion_tokens": 31, "prompt_tokens": 1105, "total_tokens": 1136 },
+    { "completion_tokens": 53, "prompt_tokens": 469, "total_tokens": 522 },
+    { "completion_tokens": 145, "prompt_tokens": 1934, "total_tokens": 2079 },
+    { "completion_tokens": 79, "prompt_tokens": 1934, "total_tokens": 2013 },
+    { "completion_tokens": 84, "prompt_tokens": 1898, "total_tokens": 1982 },
+    { "completion_tokens": 100, "prompt_tokens": 1934, "total_tokens": 2034 }
+  ],
+  40.437599999999996,
+  [
+    { "completion_tokens": 84, "prompt_tokens": 711, "total_tokens": 795 },
+    { "completion_tokens": 94, "prompt_tokens": 651, "total_tokens": 745 },
+    { "completion_tokens": 90, "prompt_tokens": 657, "total_tokens": 747 },
+    { "completion_tokens": 71, "prompt_tokens": 635, "total_tokens": 706 },
+    { "completion_tokens": 86, "prompt_tokens": 735, "total_tokens": 821 },
+    { "completion_tokens": 77, "prompt_tokens": 1070, "total_tokens": 1147 },
+    { "completion_tokens": 107, "prompt_tokens": 1039, "total_tokens": 1146 },
+    { "completion_tokens": 57, "prompt_tokens": 628, "total_tokens": 685 },
+    { "completion_tokens": 86, "prompt_tokens": 1091, "total_tokens": 1177 },
+    { "completion_tokens": 60, "prompt_tokens": 654, "total_tokens": 714 },
+    { "completion_tokens": 62, "prompt_tokens": 724, "total_tokens": 786 },
+    { "completion_tokens": 104, "prompt_tokens": 693, "total_tokens": 797 },
+    { "completion_tokens": 73, "prompt_tokens": 659, "total_tokens": 732 },
+    { "completion_tokens": 86, "prompt_tokens": 699, "total_tokens": 785 }
+  ],
+  41.922000000000004,
+  [
+    [
+      {
+        "name": "CallInteraction",
+        "parameters": { "interaction_type": "REJECT" }
+      },
+      {
+        "name": "SendMessage",
+        "parameters": {
+          "app_name": "Phone",
+          "meta": {
+            "is_number": false,
+            "number": null,
+            "contact_name": "John Doe"
+          },
+          "message_text": "I'll call you back later."
+        }
+      }
+    ],
+    [
+      {
+        "name": "MapInteraction",
+        "parameters": { "action": "Start", "is_update": false, "stop": null }
+      }
+    ],
+    [
+      {
+        "name": "AudioInteraction",
+        "parameters": {
+          "action": "Select",
+          "is_select": true,
+          "song_name": "Blinding Lights"
+        }
+      }
+    ],
+    [
+      {
+        "name": "CallInteraction",
+        "parameters": { "interaction_type": "ACCEPT" }
+      }
+    ],
+    [
+      {
+        "name": "CallInteraction",
+        "parameters": { "interaction_type": "REJECT" }
+      },
+      {
+        "name": "SendMessage",
+        "parameters": {
+          "app_name": "Phone",
+          "meta": {
+            "is_number": false,
+            "contact_name": "Jane Doe",
+            "number": null
+          },
+          "message_text": "I'm on my way."
+        }
+      },
+      {
+        "name": "MapInteraction",
+        "parameters": { "action": "Start", "is_update": false, "stop": null }
+      }
+    ],
+    [
+      {
+        "name": "Answer",
+        "parameters": {
+          "answer": "The match between SRH and GT was abandoned due to rain."
+        }
+      }
+    ],
+    [
+      {
+        "name": "Answer",
+        "parameters": {
+          "answer": "Top lunch places in Detroit, MI are Babo Detroit, Supergeil, Baobab Fare, The Congregation Detroit, See You Tomorrow, Summertown Fresh Bar, Ash-Bar Detroit, Ima Izakaya, Mad Nice, and Folk."
+        }
+      }
+    ],
+    [{ "name": "Answer", "parameters": { "answer": "Narendra Modi" } }],
+    [{ "name": "Answer", "parameters": { "answer": "Droupadi Murmu" } }],
+    [
+      {
+        "name": "Answer",
+        "parameters": {
+          "answer": "The Great Wall of China is located in northern China, stretching from the Bohai Sea in the east to the Gobi Desert in the west."
+        }
+      }
+    ],
+    [
+      {
+        "name": "MapInteraction",
+        "parameters": {
+          "action": "Update",
+          "is_update": true,
+          "stop": { "action": "Remove", "name": "Lilavati Hospital" }
+        }
+      },
+      {
+        "name": "MapInteraction",
+        "parameters": {
+          "action": "Update",
+          "is_update": true,
+          "stop": { "action": "Add", "name": "Kokilaben Hospital" }
+        }
+      }
+    ],
+    [
+      {
+        "name": "SendMessage",
+        "parameters": {
+          "app_name": "WhatsApp",
+          "meta": {
+            "is_number": false,
+            "number": null,
+            "contact_name": "Sharmaji"
+          },
+          "message_text": "I'll be 10 minutes late."
+        }
+      }
+    ],
+    [
+      {
+        "name": "AudioInteraction",
+        "parameters": {
+          "action": "Select",
+          "is_select": true,
+          "song_name": "Workout Hits"
+        }
+      }
+    ],
+    [
+      {
+        "name": "SendMessage",
+        "parameters": {
+          "app_name": "Phone",
+          "meta": {
+            "is_number": false,
+            "number": null,
+            "contact_name": "Mummy"
+          },
+          "message_text": "I am in a meeting, I will call you back in an hour."
+        }
+      }
+    ]
+  ]
+]

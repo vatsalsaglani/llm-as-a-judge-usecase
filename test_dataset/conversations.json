@@ -1,0 +1,116 @@
+[
+  [
+    {
+      "role": "assistant",
+      "content": "You have a call from contact name 'John Doe'."
+    },
+    {
+      "role": "user",
+      "content": "I'm driving I cannot talk right now reject it. Send him a message saying I'll call him back later."
+    }
+  ],
+  [
+    { "role": "assistant", "content": "Where would you like to go today?" },
+    {
+      "role": "user",
+      "content": "I need go to Lilavati Hospital."
+    }
+  ],
+  [
+    {
+      "role": "assistant",
+      "content": "Your Spotify playlist is ready. What would you like to do?"
+    },
+    {
+      "role": "user",
+      "content": "Play 'Blinding Lights'"
+    }
+  ],
+  [
+    {
+      "role": "assistant",
+      "content": "You are receiving a call from your office."
+    },
+    {
+      "role": "user",
+      "content": "Accept it"
+    }
+  ],
+  [
+    {
+      "role": "assistant",
+      "content": "You are receiving a call from your Jane Doe."
+    },
+    {
+      "role": "user",
+      "content": "Reject it and message her that I'm on my way. Also start navigation to Home, HSR Layout."
+    }
+  ],
+  [
+    {
+      "role": "user",
+      "content": "Who won the match between SRH and GT last night?"
+    }
+  ],
+  [
+    {
+      "role": "user",
+      "content": "Best lunch places near me"
+    }
+  ],
+  [
+    {
+      "role": "user",
+      "content": "Who is the Prime minister of India?"
+    }
+  ],
+  [
+    {
+      "role": "user",
+      "content": "Who is the current India President?"
+    }
+  ],
+  [
+    {
+      "role": "user",
+      "content": "Where's the great wall of China?"
+    }
+  ],
+  [
+    {
+      "role": "assistant",
+      "content": "Starting navigation to Lilavati Hospital."
+    },
+    {
+      "role": "user",
+      "content": "Actually, can you reroute to Kokilaben Hospital instead? I think it might be closer to where I am now."
+    }
+  ],
+  [
+    {
+      "role": "assistant",
+      "content": "You have a meeting scheduled with Mr. Sharma at 2 PM today."
+    },
+    {
+      "role": "user",
+      "content": "Send contact Sharmaji a message via WhatsApp that I'll be 10 minutes late."
+    }
+  ],
+  [
+    { "role": "assistant", "content": "You’re currently listening to jazz." },
+    {
+      "role": "user",
+      "content": "Switch to my 'Workout Hits' playlist and increase the volume."
+    }
+  ],
+  [
+    {
+      "role": "assistant",
+      "content": "Your mother (contact Mummy) is calling on your mobile."
+    },
+    {
+      "role": "user",
+      "content": "I'm in a meeting, send her a message that I will call her back in an hour."
+    }
+  ]
+]

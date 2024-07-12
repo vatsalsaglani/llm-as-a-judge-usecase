@@ -1,0 +1,481 @@
+{
+    "report": [
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "You have a call from contact name 'John Doe'."
+                },
+                {
+                    "role": "user",
+                    "content": "I'm driving I cannot talk right now reject it. Send him a message saying I'll call him back later."
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "CallInteraction",
+                    "parameters": {
+                        "interaction_type": "REJECT"
+                    }
+                },
+                {
+                    "name": "SendMessage",
+                    "parameters": {
+                        "app_name": "Phone",
+                        "meta": {
+                            "is_number": false,
+                            "number": null,
+                            "contact_name": "John Doe"
+                        },
+                        "message_text": "I'll call you back later"
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The system perfectly addresses the user's request to reject a call and send a message. It covers both actions: rejecting the call and sending a specific message. The parameters clearly indicate the action to reject and the content & recipient of the message."
+            },
+            "token_usage": {
+                "completion_tokens": 97,
+                "prompt_tokens": 1990,
+                "total_tokens": 2087
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "Where would you like to go today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need go to Lilavati Hospital."
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "MapInteraction",
+                    "parameters": {
+                        "action": "Start",
+                        "is_update": false,
+                        "stop": {
+                            "action": "Add",
+                            "name": "Lilavati Hospital"
+                        }
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The response is excellent as it precisely initiates a mapping interaction to start navigation to the specified location, 'Lilavati Hospital'. The parameters are correctly set to start the route guidance, which is exactly what is required based on the user's request to go to Lilavati Hospital."
+            },
+            "token_usage": {
+                "completion_tokens": 62,
+                "prompt_tokens": 1938,
+                "total_tokens": 2000
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "Your Spotify playlist is ready. What would you like to do?"
+                },
+                {
+                    "role": "user",
+                    "content": "Play 'Blinding Lights'"
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "AudioInteraction",
+                    "parameters": {
+                        "action": "Select",
+                        "is_select": true,
+                        "song_name": "Blinding Lights"
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The system response is excellent as it directly addresses the user's request to play 'Blinding Lights'. The function call to 'AudioInteraction' with parameters to select and play the song is exactly what is needed in this scenario."
+            },
+            "token_usage": {
+                "completion_tokens": 52,
+                "prompt_tokens": 1944,
+                "total_tokens": 1996
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "You are receiving a call from your office."
+                },
+                {
+                    "role": "user",
+                    "content": "Accept it"
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "CallInteraction",
+                    "parameters": {
+                        "interaction_type": "ACCEPT"
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The system's response to accept the incoming call from the office perfectly matches the user's request to 'Accept it'. The parameters indicating the interaction type as 'ACCEPT' accurately and clearly define the desired action, thereby fulfilling the user's need in this context."
+            },
+            "token_usage": {
+                "completion_tokens": 37,
+                "prompt_tokens": 1920,
+                "total_tokens": 1957
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "You are receiving a call from your Jane Doe."
+                },
+                {
+                    "role": "user",
+                    "content": "Reject it and message her that I'm on my way. Also start navigation to Home, HSR Layout."
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "CallInteraction",
+                    "parameters": {
+                        "interaction_type": "REJECT"
+                    }
+                },
+                {
+                    "name": "SendMessage",
+                    "parameters": {
+                        "app_name": "Phone",
+                        "meta": {
+                            "is_number": false,
+                            "number": null,
+                            "contact_name": "Jane Doe"
+                        },
+                        "message_text": "I'm on my way"
+                    }
+                },
+                {
+                    "name": "MapInteraction",
+                    "parameters": {
+                        "action": "Start",
+                        "is_update": false,
+                        "stop": {
+                            "action": "Add",
+                            "name": "Home, HSR Layout"
+                        }
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The system's response aligns perfectly with the user's request. The call from Jane Doe is rejected as requested. Additionally, a message is sent to Jane Doe informing her of the user's status ('I'm on my way'). Furthermore, navigation towards the user's home at HSR Layout is initiated, fulfilling all aspects of the user's instruction comprehensively."
+            },
+            "token_usage": {
+                "completion_tokens": 147,
+                "prompt_tokens": 1984,
+                "total_tokens": 2131
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "user",
+                    "content": "Who won the match between SRH and GT last night?\n\nSearch results: \n```Title: Who won yesterday's IPL match? Top highlights of last night's SRH vs GT match | Mint Description: <strong>Who</strong> <strong>won</strong> yesterday&#x27;s IPL <strong>match</strong>? <strong>The</strong> clash between SunRisers Hyderabad and Gujarat Titans at the Rajiv Gandhi International Stadium was abandoned due to rain on Thursday URL: https://www.livemint.com/sports/cricket-news/who-won-yesterdays-ipl-match-top-highlights-of-last-nights-srh-vs-gt-match-ipl-2024-playoffs-11715914821395.html\nTitle: SRH vs GT Highlights IPL 2024: Match abandoned due to rain; Sunrisers Hyderabad qualifies for playoffs - Sportstar Description: <strong>SRH</strong> vs <strong>GT</strong>: Catch the live score updates from the IPL 2024 <strong>match</strong> <strong>between</strong> Sunrisers Hyderabad and Gujarat Titans at the Rajiv Gandhi International Stadium in Hyderabad. URL: https://sportstar.thehindu.com/cricket/ipl/ipl-news/srh-vs-gt-live-score-sunrisers-hyderabad-gujarat-titans-ipl-2024-match-streaming-info-highlights-weather-updates/article68182077.ece\nTitle: SRH Vs GT: Who Won Yesterday's IPL Match? Check Highlights And Updated Points Table Description: The Rajiv Gandhi International Stadium saw its first-ever washout in 76 IPL games, and courtesy of the same, the home side, <strong>SRH</strong> qualified for the playoffs. URL: https://www.outlookindia.com/sports/cricket/srh-vs-gt-who-won-yesterdays-ipl-match-check-highlights-and-updated-points-table```"
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "Answer",
+                    "parameters": {
+                        "answer": "The match was abandoned due to rain, and SRH qualified for the playoffs."
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The system's response perfectly matches the user's request, providing clear and specific information that the match between SRH and GT was abandoned due to rain and included the additional relevant detail that SRH qualified for the playoffs. This addresses the user's question fully and accurately."
+            },
+            "token_usage": {
+                "completion_tokens": 51,
+                "prompt_tokens": 1120,
+                "total_tokens": 1171
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "user",
+                    "content": "Best lunch places near me\n\nSearch results: \n```Title: Top 10 Best Lunch in Detroit, MI - October 2023 - Yelp Description: Top 10 <strong>Best</strong> <strong>Lunch</strong> in Detroit, MI - October 2023 - Yelp - Babo Detroit, Supergeil, Baobab Fare, The Congregation Detroit, See You Tomorrow, Summertown Fresh Bar, Ash-Bar Detroit, Ima Izakaya, Mad Nice, Folk URL: https://www.yelp.com/search?find_desc=Lunch&find_loc=Detroit,+MI\nTitle: 28 Awesome Anchorage Restaurants You Have to Check Out - Alex on the Map Description: The cafe also serves breakfast ... a great <strong>place</strong> to grab <strong>lunch</strong> in Anchorage.  \u00b7 As far as its atmosphere, it\u2019s both homey and cozy; what you\u2019d hope for from any coffee shop or cafe being visited, and one of the <strong>best</strong> restaurants in Anchorage you\u2019ll want to check out. ... Familia AK is a charming and vibrant restaurant offering a delightful dining experience and is one of the most popular restaurants in Anchorage. With a diverse menu inspired by ... URL: https://alexonthemap.com/anchorage-restaurants/\nTitle: Where to Eat in Anchorage | Restaurants : Food Network | Food Network Description: Find great seafood, pizza, coffee and sticky buns in Alaska&#x27;s biggest city. URL: https://www.foodnetwork.com/restaurants/photos/best-restaurants-anchorage```"
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "Answer",
+                    "parameters": {
+                        "answer": "Check out Babo Detroit, Supergeil, Baobab Fare, The Congregation Detroit, See You Tomorrow, Summertown Fresh Bar, Ash-Bar Detroit, Ima Izakaya, Mad Nice, Folk in Detroit, MI for great lunch options."
+                    }
+                },
+                {
+                    "name": "Answer",
+                    "parameters": {
+                        "answer": "In Anchorage, consider trying Familia AK or other recommendations from Food Network."
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The response is excellent as it perfectly matches the user's request by providing a list of highly rated lunch places in both Detroit and Anchorage. It includes specific restaurant names along with summaries linking to reputable sources for detail, ensuring a comprehensive, accurate, and useful answer to the user's query."
+            },
+            "token_usage": {
+                "completion_tokens": 128,
+                "prompt_tokens": 1037,
+                "total_tokens": 1165
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "user",
+                    "content": "Who is the Prime minister of India?\n\nSearch results: \n```Title: Prime Minister of India - Wikipedia Description: After Indira Gandhi&#x27;s assassination, her son Rajiv Gandhi took charge until 1989, when a decade with five unstable governments began. This was followed by the full terms of P. V. Narasimha Rao, Atal Bihari Vajpayee, Manmohan Singh, and <strong>Narendra Modi</strong>. Modi is the 14th and current prime minister ... URL: https://en.wikipedia.org/wiki/Prime_Minister_of_India\nTitle: Prime Minister of India Description: Prime Minister <strong>Shri Narendra Modi</strong> had a telephone conversation today with Georgia Meloni, Prime Minister of Italy. ... In the last few years, the growth of the Coalition for Disaster Resilient Infrastructure has been impressive. We have come a long way since 2019, when CDRI was launched. URL: https://www.pmindia.gov.in/en/\nTitle: Know the PM | Prime Minister of India Description: Pm <strong>India</strong> Website URL: https://www.pmindia.gov.in/en/pms-profile/```"
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "Answer",
+                    "parameters": {
+                        "answer": "Narendra Modi"
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The response is excellent as it correctly identifies Narendra Modi as the current Prime Minister of India, which exactly matches the user's query without any unnecessary or incorrect information."
+            },
+            "token_usage": {
+                "completion_tokens": 38,
+                "prompt_tokens": 958,
+                "total_tokens": 996
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "user",
+                    "content": "Who is the current India President?\n\nSearch results: \n```Title: President of India (@rashtrapatibhvn) \u00b7 X Description: The latest tweets from <strong>President</strong> <strong>of</strong> <strong>India</strong> (@rashtrapatibhvn) URL: https://twitter.com/rashtrapatibhvn\nTitle: Home | President of India Description: 09 May 24 <strong>PRESIDENT</strong> <strong>OF</strong> <strong>INDIA</strong> PRESENTS PADMA AWARDS AT THE CIVIL INVESTITURE CEREMONY-II \u00b7 06 May 24 <strong>PRESIDENT</strong> <strong>OF</strong> <strong>INDIA</strong> GRACES 7th CONVOCATION OF CENTRAL UNIVERSITY OF HIMACHAL PRADESH \u00b7 05 May 24 <strong>PRESIDENT</strong> <strong>OF</strong> <strong>INDIA</strong> PAYS FLORAL TRIBUTES TO GIANI ZAIL SINGH ON HIS BIRTH ANNIVERSARY ... 01 May 24 <strong>PRESIDENT</strong> <strong>OF</strong> <strong>INDIA</strong> VISITS AYODHYA; HAS DARSHAN AT SHRI HANUMAN GARHI TEMPLE AND PRABHU SHRI RAM TEMPLE \u00b7 30 Apr 24 <strong>PRESIDENT</strong> <strong>OF</strong> <strong>INDIA</strong> TO VISIT AYODHYA TOMORROW \u00b7 24 Apr 24 HUMAN SOCIETY IS ... URL: https://presidentofindia.nic.in/\nTitle: President of India - Wikipedia Description: The president of India (ISO: Bh\u0101rata k\u0113 R\u0101\u1e63\u1e6drapati) is the head of state of the Republic of India. The president is the nominal head of the executive, the first citizen of the country, as well as the supreme commander of the Indian Armed Forces. <strong>Droupadi Murmu</strong> is the 15th and current ... URL: https://en.wikipedia.org/wiki/President_of_India```"
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "Answer",
+                    "parameters": {
+                        "answer": "The current President of India is Droupadi Murmu"
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The response is excellent as it directly answers the user's question by providing the name of the current President of India, Droupadi Murmu, which is exactly the information the user requested."
+            },
+            "token_usage": {
+                "completion_tokens": 46,
+                "prompt_tokens": 1176,
+                "total_tokens": 1222
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "user",
+                    "content": "Where's the great wall of China?"
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "Answer",
+                    "parameters": {
+                        "answer": "The Great Wall of China is located in China. It runs across the northern borders of China, from the eastern coast to the western frontier, spanning over 13,000 miles (21,000 km)."
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The system's response is excellent as it correctly identifies the location of the Great Wall of China and provides comprehensive additional information about its expanse, thus comprehensively addressing the user's question."
+            },
+            "token_usage": {
+                "completion_tokens": 75,
+                "prompt_tokens": 483,
+                "total_tokens": 558
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "Starting navigation to Lilavati Hospital."
+                },
+                {
+                    "role": "user",
+                    "content": "Actually, can you reroute to Kokilaben Hospital instead? I think it might be closer to where I am now."
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "MapInteraction",
+                    "parameters": {
+                        "action": "Update",
+                        "is_update": true,
+                        "stop": {
+                            "action": "Remove",
+                            "name": "Lilavati Hospital"
+                        }
+                    }
+                },
+                {
+                    "name": "MapInteraction",
+                    "parameters": {
+                        "action": "Update",
+                        "is_update": true,
+                        "stop": {
+                            "action": "Add",
+                            "name": "Kokilaben Hospital"
+                        }
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The response perfectly matches the user's request by rerouting their destination from Lilavati Hospital to Kokilaben Hospital, as requested. The functions used accurately adjust the route by removing the prior destination and adding the new requested destination, making the response highly appropriate and complete."
+            },
+            "token_usage": {
+                "completion_tokens": 115,
+                "prompt_tokens": 1986,
+                "total_tokens": 2101
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "You have a meeting scheduled with Mr. Sharma at 2 PM today."
+                },
+                {
+                    "role": "user",
+                    "content": "Send contact Sharmaji a message via WhatsApp that I'll be 10 minutes late."
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "SendMessage",
+                    "parameters": {
+                        "app_name": "WhatsApp",
+                        "meta": {
+                            "is_number": false,
+                            "number": null,
+                            "contact_name": "Sharmaji"
+                        },
+                        "message_text": "I'll be 10 minutes late"
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The response is excellent as it perfectly matches the user's request by sending a message via WhatsApp to the specified contact 'Sharmaji'. It uses the correct app (WhatsApp), specifies the contact correctly, and conveys the exact message content requested ('I'll be 10 minutes late')."
+            },
+            "token_usage": {
+                "completion_tokens": 73,
+                "prompt_tokens": 1987,
+                "total_tokens": 2060
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "You\u2019re currently listening to jazz."
+                },
+                {
+                    "role": "user",
+                    "content": "Switch to my 'Workout Hits' playlist and increase the volume."
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "AudioInteraction",
+                    "parameters": {
+                        "action": "Select",
+                        "is_select": true,
+                        "song_name": "Workout Hits"
+                    }
+                },
+                {
+                    "name": "AudioInteraction",
+                    "parameters": {
+                        "action": "Play",
+                        "is_select": false,
+                        "song_name": null
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 2,
+                "evaluation": "The response is partially appropriate as it addresses the user's request to switch to the 'Workout Hits' playlist but fails to include a response to the second request to increase the volume. This overlooks a significant part of the user's command."
+            },
+            "token_usage": {
+                "completion_tokens": 89,
+                "prompt_tokens": 1951,
+                "total_tokens": 2040
+            }
+        },
+        {
+            "input": [
+                {
+                    "role": "assistant",
+                    "content": "Your mother (contact Mummy) is calling on your mobile."
+                },
+                {
+                    "role": "user",
+                    "content": "I'm in a meeting, send her a message that I will call her back in an hour."
+                }
+            ],
+            "system_response": [
+                {
+                    "name": "SendMessage",
+                    "parameters": {
+                        "app_name": "Phone",
+                        "meta": {
+                            "is_number": false,
+                            "number": null,
+                            "contact_name": "Mummy"
+                        },
+                        "message_text": "Hi Mummy, I'm in a meeting and will call you back in an hour."
+                    }
+                }
+            ],
+            "rating": {
+                "rating": 4,
+                "evaluation": "The response is excellent as it perfectly matches the user's request. The system understood the user's situation of being in a meeting and crafted a suitable message that fulfills the request to inform the user's mother she will be called back in an hour. The parameters used are appropriate, specifying the right app and appropriately identifying the contact by name rather than number, which implies that the contact is already saved, making the process seamless."
+            },
+            "token_usage": {
+                "completion_tokens": 83,
+                "prompt_tokens": 1986,
+                "total_tokens": 2069
+            }
+        }
+    ],
+    "average_rating": 3.857142857142857,
+    "total_time_for_generating_system_responses": 138.474,
+    "average_time_for_generating_system_responses": 9.891,
+    "total_time_for_evaluating": 62.115500000000004,
+    "average_rating_time": 4.436821428571429
+}
